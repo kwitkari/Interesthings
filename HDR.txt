@@ -2,5 +2,5 @@ HDR entry point .
 
 https://daejeonchronicles.com/2021/03/02/comprehensive-workflow-sony-a7s-iii-s-log3-hdr-10-in-davinci-resolve-studio-17-part-i/ 
 
-
+https://devtalk.blender.org/t/gsoc-2025-draft-proposal-high-dynamic-range-hdr-support-for-video/39915
  
