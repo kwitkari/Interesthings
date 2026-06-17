@@ -6,3 +6,7 @@ https://devtalk.blender.org/t/gsoc-2025-draft-proposal-high-dynamic-range-hdr-su
  
 MAdVR for MPC be is ok for HDR, or 1$ HEVC extension in microsoft store
 https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=184888
+
+
+
+https://www.reddit.com/r/htpc/comments/1owdycr/comment/nopwe0o/?tl=pl&utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
