@@ -5,3 +5,4 @@ https://daejeonchronicles.com/2021/03/02/comprehensive-workflow-sony-a7s-iii-s-l
 https://devtalk.blender.org/t/gsoc-2025-draft-proposal-high-dynamic-range-hdr-support-for-video/39915
  
 MAdVR for MPC be is ok for HDR, or 1$ HEVC extension in microsoft store
+https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=184888
