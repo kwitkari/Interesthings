@@ -11,4 +11,48 @@ https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=184888
 
 https://www.reddit.com/r/htpc/comments/1owdycr/comment/nopwe0o/?tl=pl&utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
 some tools : 
+
+
   https://forum.doom9.org/showthread.php?p=1271417#post1271417
+
+
+
+
+
+
+
+
+I dont want to get too into the weeds here - both from getting overly technical where I dont know enough, and where I can just contribute a bit of bread crumb trail and lead for you to work with OP for brevity sake.
+
+If i think I have understood the idea you are covering - where letting MadVR play HDR and SDR and have unique settings for each, and let it switch? It can do this, and it can AUTO do it, by reading the file metadata, but file name annotation can also achieve this.
+
+How it is done im far from expert, but I forced myself deeper into doom9 and other forums, and then hada few arguments with chatgpt to derive the solution - you make profiles and within those, unique settings, within madvr settings tabs hierarchy.
+Basically you use certain video spec flags of their parameters (resolution, frame rate, color range etc) , and create ways to divide up the files you play.
+
+This is the text i entered on the upper tab entry for the section that covers device calibration/gamma - thats where I could split for HDR and SDR settings. SO its all about entering valid and syntax correct 'rule text'.
+Mine is:
+
+if (hdr) "HDR"
+
+else if (srcHeight > 1080) "SDR_2160p"
+
+else "SDR_<=1080p"
+
+and that makes me 3 grps:
+
+HDR (of any res)
+
+SDR , at res larger than 1080p (so to cover the 4k/ 2160p)
+
+SDR , at 1080 or lower res.
+(it could be made for all types of splits, and even with mine here- i opted for this hierarchical split as basically 99% of my HDR is 4k, having 1080p or 1440p HDR is rare in my media, so no need for that 4th grp)
+
+this link explains some of the rule text formatting needed
+http://forum.doom9.org/showthread.php?p=1271417#post1271417
+
+Aside from makin the rule text todenote the different settings types, those are bound to separate Profiles (the names in the " " quotes in rule text above) - and so you also have to manually create a profile with that exact quoted text name you pick, and then it all works.
+
+But i def didnt do it solo. and it took some troubleshooting.
+I hope this is a useful lead for what can help you out.
+
+I also mad similar splits in profiles for other areas in MADVr settings, its esp useful again in these same 3 split ways I did, but I also have a high frame rate 60fps grp, and apply this so i can push my settings via the GPU further, on media that is less demanding, in the processing and scaling algorithm tabs.
